@@ -1,0 +1,29 @@
+{
+  "name": "markdown-blog",
+  "version": "1.0.0",
+  "description": "A simple blog app where we can create markdown posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VipinVIP/MDBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VipinVIP/MDBlog/issues"
+  },
+  "homepage": "https://github.com/VipinVIP/MDBlog#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
