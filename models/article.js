@@ -3,6 +3,7 @@ const marked=require('marked')
 const slugify=require('slugify')
 const createDomPurify=require('dompurify')
 const {JSDOM}=require('jsdom')
+const emoji=require('node-emoji')
 
 const dompurify=createDomPurify(new JSDOM().window)
 
@@ -39,7 +40,7 @@ articleSchema.pre('validate',function (next){
     }
 
     if(this.markdown){
-        this.sanitizedHtml=dompurify.sanitize(marked(this.markdown))
+        this.sanitizedHtml=dompurify.sanitize(marked(emoji.emojify(this.markdown)))
     }
     next()
 })
